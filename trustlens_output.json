@@ -1,0 +1,42 @@
+{
+    "alert_1": {
+        "recommendation": "Quarantine Device",
+        "confidence": "High",
+        "reasons": [
+            "Repeated failed login attempts were detected.",
+            "An unknown executable file was found.",
+            "Unusual network activity was observed."
+        ]
+    },
+    "alert_2": {
+        "recommendation": "Block IP Address",
+        "confidence": "High",
+        "reasons": [
+            "Suspicious traffic detected",
+            "Multiple connection attempts"
+        ]
+    },
+    "alert_3": {
+        "recommendation": "Force Password Reset",
+        "confidence": "Medium",
+        "reasons": [
+            "Unusual login location",
+            "Possible credential compromise"
+        ]
+    },
+    "alert_4": {
+        "recommendation": "Install Security Patch",
+        "confidence": "High",
+        "reasons": [
+            "Critical vulnerability found",
+            "Patch missing"
+        ]
+    },
+    "alert_5": {
+        "recommendation": "Monitor Device",
+        "confidence": "Medium",
+        "reasons": [
+            "Abnormal network behaviour detected"
+        ]
+    }
+}
