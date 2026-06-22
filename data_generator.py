@@ -31,3 +31,34 @@ def explain_log(log_text):
         )
 
     return explanations
+
+# Structured JSON output for frontend integration
+output = {
+    "alert_1": {
+        "recommendation": "Quarantine Device",
+        "confidence": "High",
+        "reasons": explain_log(log),
+        "data_sources": [
+            "Security Logs",
+            "Device Telemetry"
+        ],
+        "limitations": [
+            "Possible false positive"
+        ]
+    },
+
+    "alert_2": {
+        "recommendation": "Block IP Address",
+        "confidence": "High",
+        "reasons": [
+            "Suspicious traffic detected",
+            "Multiple connection attempts"
+        ],
+        "data_sources": [
+            "Firewall Logs",
+            "Network Monitor"
+        ],
+        "limitations": [
+            "Shared IP may affect legitimate users"
+        ]
+    },
