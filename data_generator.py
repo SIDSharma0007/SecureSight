@@ -62,3 +62,52 @@ output = {
             "Shared IP may affect legitimate users"
         ]
     },
+
+        ,
+
+    "alert_3": {
+        "recommendation": "Force Password Reset",
+        "confidence": "Medium",
+        "reasons": [
+            "Unusual login location",
+            "Possible credential compromise"
+        ],
+        "data_sources": [
+            "Authentication Logs",
+            "Threat Intelligence Feed"
+        ],
+        "limitations": [
+            "Location data may be inaccurate"
+        ]
+    },
+
+    "alert_4": {
+        "recommendation": "Install Security Patch",
+        "confidence": "High",
+        "reasons": [
+            "Critical vulnerability found",
+            "Patch missing"
+        ],
+        "data_sources": [
+            "Patch Management System",
+            "Vulnerability Scanner"
+        ],
+        "limitations": [
+            "System restart required"
+        ]
+    },
+
+    "alert_5": {
+        "recommendation": "Monitor Device",
+        "confidence": "Medium",
+        "reasons": [
+            "Abnormal network behaviour detected"
+        ],
+        "data_sources": [
+            "Network Logs",
+            "Behaviour Analytics"
+        ],
+        "limitations": [
+            "Insufficient historical data"
+        ]
+    }
