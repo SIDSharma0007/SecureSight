@@ -109,3 +109,11 @@ output = {
             "Insufficient historical data"
         ]
     }
+# Save JSON file
+with open("trustlens_output.json", "w") as f:
+    json.dump(output, f, indent=4)
+
+# Print JSON output
+print(json.dumps(output, indent=4))
+
+print("\nJSON file created successfully!")
