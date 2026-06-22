@@ -63,8 +63,6 @@ output = {
         ]
     },
 
-        ,
-
     "alert_3": {
         "recommendation": "Force Password Reset",
         "confidence": "Medium",
